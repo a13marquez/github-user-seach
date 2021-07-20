@@ -1,0 +1,19 @@
+{
+  "name": "github-user-seach",
+  "version": "1.0.0",
+  "description": "Github users API search and display",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a13marquez/github-user-seach.git"
+  },
+  "author": "Álvaro Márquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a13marquez/github-user-seach/issues"
+  },
+  "homepage": "https://github.com/a13marquez/github-user-seach#readme"
+}
