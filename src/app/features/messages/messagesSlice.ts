@@ -18,6 +18,10 @@ export const messageSlice = createSlice({
       .addCase(searchUsersAsync.fulfilled, (state) => {
         state.isFetching = false
       })
+      .addCase(searchUsersAsync.rejected, (state, action) => {
+        state.isFetching = false
+        state.errorMessage = action.payload as string
+      })
   }
 })
 
