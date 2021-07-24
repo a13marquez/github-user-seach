@@ -1,0 +1,29 @@
+.spinner {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  width: 45%;
+  color: white;
+  margin: 0;
+}
+
+.search {
+  width: 25%;
+  margin: 0;
+  margin: 0;
+}
+
+.ant-list {
+  margin-top: 64px;
+  overflow-y: scroll;
+}
