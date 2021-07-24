@@ -19,4 +19,14 @@ describe('Messages reducer', () => {
       errorMessage: ''
     })
   })
+
+    it('Should handle the search users fullfiled state', () => {
+    expect(messageReducer(
+      { isFetching: true, errorMessage: ''},
+      { type: searchUsersAsync.fulfilled.type, payload: '' }
+    )).toEqual({
+      isFetching: false,
+      errorMessage: ''
+    })
+  })
 })

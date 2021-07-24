@@ -13,9 +13,12 @@ export const messageSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(searchUsersAsync.pending, (state) => {
-        state.isFetching = true;
+        state.isFetching = true
+      })
+      .addCase(searchUsersAsync.fulfilled, (state) => {
+        state.isFetching = false
       })
   }
-});
+})
 
 export default messageSlice.reducer
