@@ -10,6 +10,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist')
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -44,6 +45,12 @@ module.exports = {
             ]
           }
         }
+      },
+      {
+        test: /\.(ts|js)x?$/,
+        exclude: /(node_modules|bower_components)/,
+        enforce: 'pre',
+        use: ['source-map-loader']
       }
     ]
 
