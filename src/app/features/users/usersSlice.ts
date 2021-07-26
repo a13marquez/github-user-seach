@@ -1,5 +1,6 @@
 
 import { createSlice } from '@reduxjs/toolkit'
+import { IAppState } from '../../models/appState.model'
 import { IUsersState } from '../../models/UsersState.model'
 import { searchUsersAsync } from '../../thunks/searchUsers'
 
@@ -21,5 +22,7 @@ export const usersSlice = createSlice({
   }
 })
 
+export const getUsers = (state: IAppState) => state.users.users
+export const getUserCount = (state: IAppState) => state.users.usersCount
 
 export default usersSlice.reducer;

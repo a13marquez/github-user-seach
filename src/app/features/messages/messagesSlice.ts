@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IAppState } from "../../models/appState.model";
 import { searchUsersAsync } from "../../thunks/searchUsers";
 
 const initialState = {
@@ -24,5 +25,8 @@ export const messageSlice = createSlice({
       })
   }
 })
+
+export const getIsFetching = (state: IAppState) => state.messages.isFetching
+export const getError = (state: IAppState) => state.messages.errorMessage
 
 export default messageSlice.reducer

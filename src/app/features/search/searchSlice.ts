@@ -13,7 +13,7 @@ export const searchSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(searchUsersAsync.pending, (state, action) => {
-        state.query = action.payload;
+        state.query = action.payload as unknown as string;
       })
   }
 })
