@@ -16,7 +16,8 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   float: left;
-  width: 80%;
+  width: fit-content;
+  width: -moz-fit-content;
   background: #f1f1f1;
 }
 
@@ -24,7 +25,8 @@
 .search button {
   width: auto;
   float: left;
-  width: 20%;
+  width: fit-content;
+  width: -moz-fit-content;
   padding: 10px;
   background: #2196F3;
   color: white;
