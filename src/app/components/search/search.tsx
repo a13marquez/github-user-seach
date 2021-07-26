@@ -18,6 +18,7 @@ export const Search = () => {
   return (
     <div className="search">
       <input
+        type='text'
         placeholder="Search an user"
         onChange={(e) => handleInput(e)}
         data-testid="user-search"
@@ -26,7 +27,7 @@ export const Search = () => {
         aria-label="search-button"
         onClick={(e) => dispatch(searchUsersAsync(input))}
       >
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon icon={faSearch} size='xs' />
       </button>
     </div>
   );

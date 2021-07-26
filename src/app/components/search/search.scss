@@ -2,11 +2,19 @@
   box-sizing: border-box;
 }
 
+.search {
+  width: fit-content;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: normal;
+}
+
 /* Style the search field */
 .search input[type=text] {
   padding: 10px;
-  font-size: 17px;
   border: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   float: left;
   width: 80%;
   background: #f1f1f1;
@@ -14,16 +22,17 @@
 
 /* Style the submit button */
 .search button {
+  width: auto;
   float: left;
   width: 20%;
   padding: 10px;
   background: #2196F3;
   color: white;
-  font-size: 17px;
   border: 1px solid grey;
   border-left: none;
-  /* Prevent double borders */
   cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .search button:hover {
